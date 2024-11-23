@@ -1,1 +1,106 @@
-const _0x41dac9=_0x334c;(function(_0xc8abd8,_0x2dd130){const _0x2cb688=_0x334c,_0x2eed2c=_0xc8abd8();while(!![]){try{const _0x3c6e73=-parseInt(_0x2cb688(0x17a))/0x1*(-parseInt(_0x2cb688(0x17d))/0x2)+parseInt(_0x2cb688(0x183))/0x3*(parseInt(_0x2cb688(0x174))/0x4)+parseInt(_0x2cb688(0x188))/0x5+parseInt(_0x2cb688(0x173))/0x6+parseInt(_0x2cb688(0x172))/0x7+parseInt(_0x2cb688(0x177))/0x8*(-parseInt(_0x2cb688(0x17c))/0x9)+-parseInt(_0x2cb688(0x178))/0xa*(parseInt(_0x2cb688(0x186))/0xb);if(_0x3c6e73===_0x2dd130)break;else _0x2eed2c['push'](_0x2eed2c['shift']());}catch(_0x4017f1){_0x2eed2c['push'](_0x2eed2c['shift']());}}}(_0x49e5,0x6895d));function _0x49e5(){const _0x1c3772=['9XnfHBd','159928ZUFYkZ','\x20)\x0a\x0a>\x20ɪɴꜰɪɴɪᴛʏ\x20ᴍᴏᴠɪᴇ\x20ʙᴏᴛ','quality','data','.mp4','/api/file/','18474AKjSfn','video/mp4','SD\x20480p','5016HWBDTW','\x20(\x20','752355gCpNTL','length','3810282pwBaxh','3233382YiRluY','212mOwFua','result','link','5232568cIYnBo','28010iuoqLt','title','10hDFPYa','sendMessage'];_0x49e5=function(){return _0x1c3772;};return _0x49e5();}const filteredLinks=mv[_0x41dac9(0x175)][_0x41dac9(0x180)]['dl_links']['filter'](_0x47b43b=>_0x47b43b[_0x41dac9(0x17f)]===_0x41dac9(0x185)&&_0x47b43b[_0x41dac9(0x176)]['includes']('pixeldrain.com'));if(filteredLinks[_0x41dac9(0x171)]===0x0)return reply('*_Can\x27t\x20download\x20your\x20movie._*');function _0x334c(_0x31f49a,_0x24880b){const _0x49e57e=_0x49e5();return _0x334c=function(_0x334ce9,_0x468160){_0x334ce9=_0x334ce9-0x171;let _0x3126f8=_0x49e57e[_0x334ce9];return _0x3126f8;},_0x334c(_0x31f49a,_0x24880b);}const downloadUrl=filteredLinks[0x0][_0x41dac9(0x176)]['replace']('/u/',_0x41dac9(0x182)),caption=mv[_0x41dac9(0x175)][_0x41dac9(0x180)][_0x41dac9(0x179)]+_0x41dac9(0x187)+qualityInput+_0x41dac9(0x17e);await conn[_0x41dac9(0x17b)](from,{'document':{'url':downloadUrl},'mimetype':_0x41dac9(0x184),'fileName':mv[_0x41dac9(0x175)]['data'][_0x41dac9(0x179)]+_0x41dac9(0x181),'caption':caption},{'quoted':mek});
+const { fetchJson } = require('../lib/functions');
+const config = require('../config');
+const { cmd, commands } = require('../command');
+
+const apilink = 'https://www.dark-yasiya-api.site';
+
+cmd({
+    pattern: "moviedl",
+    desc: "download movies",
+    category: "movie",
+    filename: __filename
+},
+async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+
+        const blockGrp = config.BLOCK_JID
+if(blockGrp.includes(from)) return
+
+const premUsers = ['94701814946', '94771709545', '94741545187'];
+        
+        // Check if the user is premium
+
+        if (!premUsers.includes(senderNumber)) {
+            return reply(
+                "*_You don't have access to download movies._*"
+            );
+        }
+        
+        // Validate input
+
+        if(!q && !q.startsWith("https://sinhalasub.lk/")) {
+
+            return reply("*_Please give me a movie name or sinhalasub.lk url._*");
+        }
+
+
+        // Fetch movie data
+
+        if(q.startsWith("https://sinhalasub.lk/")) {
+
+        const mv = await fetchJson(`${apilink}/movie/sinhalasub/movie?url=${q}`)
+
+        // Filter download links based on the quality
+        const filteredLinks = mv.result.data.dl_links.filter(
+            (link) => link.quality === 'SD 480p' && link.link.includes("pixeldrain.com")
+        );
+
+        if (filteredLinks.length === 0) {
+            return reply(`*_Can't download your movie._*`);
+        }
+
+        // Generate download URL
+        const downloadUrl = filteredLinks[0].link.replace('/u/', '/api/file/');
+
+        // Prepare caption and send the document
+        const caption = `${mv.result.data.title} ( SD 480p )\n\n> ɪɴꜰɪɴɪᴛʏ ᴍᴏᴠɪᴇ ʙᴏᴛ`;
+
+        await conn.sendMessage(
+            from,
+            {
+                document: { url: downloadUrl },
+                mimetype: "video/mp4",
+                fileName: mv.result.data.title + ".mp4",
+                caption: caption
+            },
+            { quoted: mek }
+        );
+
+ } else {
+
+const search = await fetchJson(`${apilink}/movie/sinhalasub/search?text=${q}`)
+
+const mv2 = await fetchJson(`${apilink}/movie/sinhalasub/movie?url=${search.result.data[0].link}`)
+
+// Filter download links based on the quality
+        const filteredLinks2 = mv2.result.data.dl_links.filter(
+            (link) => link.quality === 'SD 480p' && link.link.includes("pixeldrain.com")
+        );
+
+        if (filteredLinks2.length === 0) {
+            return reply(`*_Can't download your movie._*`);
+        }
+
+        // Generate download URL
+        const downloadUrl2 = filteredLinks2[0].link.replace('/u/', '/api/file/');
+
+        // Prepare caption and send the document
+        const caption2 = `${mv2.result.data.title} ( SD 480p )\n\n> ɪɴꜰɪɴɪᴛʏ ᴍᴏᴠɪᴇ ʙᴏᴛ`;
+
+        await conn.sendMessage(
+            from,
+            {
+                document: { url: downloadUrl2 },
+                mimetype: "video/mp4",
+                fileName: mv2.result.data.title + ".mp4",
+                caption: caption2
+            },
+            { quoted: mek }
+        );
+
+}
+    } catch (e) {
+        console.error(e);
+        reply(`${e}`)
+    }
+});

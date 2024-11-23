@@ -1,1 +1,140 @@
-function _0x42d2(_0x329c73,_0x4a8029){const _0x4be42a=_0x4be4();return _0x42d2=function(_0x42d25d,_0x4cbfb8){_0x42d25d=_0x42d25d-0x1ca;let _0x5327bb=_0x4be42a[_0x42d25d];return _0x5327bb;},_0x42d2(_0x329c73,_0x4a8029);}const _0x1fba42=_0x42d2;(function(_0xa295d5,_0xe3b146){const _0xfb4a56=_0x42d2,_0x5b9354=_0xa295d5();while(!![]){try{const _0x4faefb=-parseInt(_0xfb4a56(0x1d1))/0x1*(parseInt(_0xfb4a56(0x1d0))/0x2)+-parseInt(_0xfb4a56(0x1e8))/0x3+-parseInt(_0xfb4a56(0x1d3))/0x4*(parseInt(_0xfb4a56(0x1db))/0x5)+parseInt(_0xfb4a56(0x1f6))/0x6+-parseInt(_0xfb4a56(0x1f1))/0x7+-parseInt(_0xfb4a56(0x1cc))/0x8+-parseInt(_0xfb4a56(0x1f4))/0x9*(-parseInt(_0xfb4a56(0x1ec))/0xa);if(_0x4faefb===_0xe3b146)break;else _0x5b9354['push'](_0x5b9354['shift']());}catch(_0x48343e){_0x5b9354['push'](_0x5b9354['shift']());}}}(_0x4be4,0x49c00));function _0x4be4(){const _0x2d8db5=['/movie/sinhalasub/movie?url=','/u/','includes','SD\x20480p','length','dl_links','quality','588600fHJbNG','replace','title','\x20(\x20SD\x20480p\x20)\x0a\x0a>\x20ɪɴꜰɪɴɪᴛʏ\x20ᴍᴏᴠɪᴇ\x20ʙᴏᴛ','80CBawnw','pixeldrain.com','../config','/api/file/','94701814946','3002286hDDkCP','.mp4','https://www.dark-yasiya-api.site','1843434YNMyop','link','1132956iaNsst','MV_SEND_JID','data','4795704tImWvD','../command','result','video/mp4','7902dooVcK','73Gdlslt','https://sinhalasub.lk/','40fAvmjQ','../lib/functions','sendMessage','split','filter','movie','startsWith','*_Can\x27t\x20download\x20your\x20movie._*','6185rCWTaH','\x20&\x20','BLOCK_JID','/movie/sinhalasub/search?text=','94771709545','*_You\x20don\x27t\x20have\x20access\x20to\x20send\x20movies._*'];_0x4be4=function(){return _0x2d8db5;};return _0x4be4();}const {fetchJson}=require(_0x1fba42(0x1d4)),config=require(_0x1fba42(0x1ee)),{cmd,commands}=require(_0x1fba42(0x1cd)),apilink=_0x1fba42(0x1f3),id=config[_0x1fba42(0x1ca)];cmd({'pattern':'moviesend','desc':'movie\x20send\x20to\x20grp\x20jid','category':_0x1fba42(0x1d8),'filename':__filename},async(_0x4a27ef,_0x33e31b,_0x1bb305,{from:_0x599daf,quoted:_0x4fd196,body:_0x4d7060,isCmd:_0x560fb3,command:_0x19574a,args:_0x6d1779,q:_0x4a7f0e,isGroup:_0x164c7a,sender:_0x4e93e9,senderNumber:_0x18aa48,botNumber2:_0x3657e1,botNumber:_0x3df5c6,pushname:_0x11f430,isMe:_0x3c370e,isOwner:_0x5fe1d1,groupMetadata:_0x18b4a0,groupName:_0x4fc47a,participants:_0x4a6e08,groupAdmins:_0x5d6e43,isBotAdmins:_0x482792,isAdmins:_0x279c89,reply:_0x2b985e})=>{const _0x3d554c=_0x1fba42;try{const _0x4a5792=config[_0x3d554c(0x1dd)];if(_0x4a5792[_0x3d554c(0x1e3)](_0x599daf))return;const _0x4e766e=[_0x3d554c(0x1f0),_0x3d554c(0x1df),'94741545187'];if(!_0x4e766e[_0x3d554c(0x1e3)](_0x18aa48))return _0x2b985e(_0x3d554c(0x1e0));if(!_0x4a7f0e&&!_0x4a7f0e[_0x3d554c(0x1d9)](_0x3d554c(0x1d2)))return _0x2b985e('*_Please\x20give\x20me\x20a\x20movie\x20name\x20or\x20sinhalasub.lk\x20url._*');const _0x585d5e=_0x4a7f0e[_0x3d554c(0x1d6)](_0x3d554c(0x1dc)),_0x5d748f=_0x585d5e[0x0],_0x2ae4cf=_0x4a7f0e[0x1];if(_0x5d748f[_0x3d554c(0x1d9)](_0x3d554c(0x1d2))){let _0x4684b8=await fetchJson(apilink+_0x3d554c(0x1e1)+_0x5d748f);const _0x31c19b=_0x4684b8[_0x3d554c(0x1ce)][_0x3d554c(0x1cb)][_0x3d554c(0x1e6)][_0x3d554c(0x1d7)](_0x5a9283=>_0x5a9283[_0x3d554c(0x1e7)]===_0x3d554c(0x1e4)&&_0x5a9283['link'][_0x3d554c(0x1e3)](_0x3d554c(0x1ed)));if(_0x31c19b['length']===0x0)return _0x2b985e(_0x3d554c(0x1da));const _0x50fdb9=_0x31c19b[0x0][_0x3d554c(0x1f5)][_0x3d554c(0x1e9)](_0x3d554c(0x1e2),_0x3d554c(0x1ef)),_0x598e66=_0x4684b8['result'][_0x3d554c(0x1cb)]['title']+'\x20(\x20SD\x20480p\x20)\x0a\x0a>\x20ɪɴꜰɪɴɪᴛʏ\x20ᴍᴏᴠɪᴇ\x20ʙᴏᴛ';!_0x2ae4cf?await _0x4a27ef[_0x3d554c(0x1d5)](id,{'document':{'url':_0x50fdb9},'mimetype':'video/mp4','fileName':_0x4684b8[_0x3d554c(0x1ce)][_0x3d554c(0x1cb)][_0x3d554c(0x1ea)]+_0x3d554c(0x1f2),'caption':_0x598e66}):await _0x4a27ef[_0x3d554c(0x1d5)](_0x2ae4cf,{'document':{'url':_0x50fdb9},'mimetype':_0x3d554c(0x1cf),'fileName':_0x4684b8[_0x3d554c(0x1ce)][_0x3d554c(0x1cb)][_0x3d554c(0x1ea)]+_0x3d554c(0x1f2),'caption':_0x598e66});}else{let _0x377de5=await fetchJson(apilink+_0x3d554c(0x1de)+_0x5d748f),_0x1ea07b=await fetchJson(apilink+_0x3d554c(0x1e1)+_0x377de5['result'][_0x3d554c(0x1cb)][0x0][_0x3d554c(0x1f5)]);const _0x45c056=_0x1ea07b['result'][_0x3d554c(0x1cb)]['dl_links']['filter'](_0x2c7021=>_0x2c7021[_0x3d554c(0x1e7)]===_0x3d554c(0x1e4)&&_0x2c7021[_0x3d554c(0x1f5)][_0x3d554c(0x1e3)](_0x3d554c(0x1ed)));if(_0x45c056[_0x3d554c(0x1e5)]===0x0)return _0x2b985e(_0x3d554c(0x1da));const _0x3d13df=_0x45c056[0x0][_0x3d554c(0x1f5)][_0x3d554c(0x1e9)](_0x3d554c(0x1e2),'/api/file/'),_0xf74da7=_0x1ea07b['result'][_0x3d554c(0x1cb)][_0x3d554c(0x1ea)]+_0x3d554c(0x1eb);!_0x2ae4cf?await _0x4a27ef[_0x3d554c(0x1d5)](id,{'document':{'url':_0x3d13df},'mimetype':'video/mp4','fileName':_0x1ea07b[_0x3d554c(0x1ce)][_0x3d554c(0x1cb)][_0x3d554c(0x1ea)]+'.mp4','caption':_0xf74da7}):await _0x4a27ef[_0x3d554c(0x1d5)](_0x2ae4cf,{'document':{'url':_0x3d13df},'mimetype':'video/mp4','fileName':_0x1ea07b[_0x3d554c(0x1ce)][_0x3d554c(0x1cb)]['title']+_0x3d554c(0x1f2),'caption':_0xf74da7});}}catch(_0x948aff){console['error'](_0x948aff),_0x2b985e(''+_0x948aff);}});
+const { fetchJson } = require('../lib/functions');
+const config = require('../config');
+const { cmd, commands } = require('../command');
+
+const apilink = 'https://www.dark-yasiya-api.site';
+const id = config.MV_SEND_JID
+
+cmd({
+    pattern: "moviesend",
+    desc: "movie send to grp jid",
+    category: "movie",
+    filename: __filename
+},
+async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+
+        const blockGrp = config.BLOCK_JID
+if(blockGrp.includes(from)) return
+
+const premUsers = ['94701814946', '94771709545', '94741545187'];
+        
+        // Check if the user is premium
+        if (!premUsers.includes(senderNumber)) {
+            return reply(
+                "*_You don't have access to send movies._*"
+            );
+        }
+        
+        // Validate input
+        if(!q && !q.startsWith("https://sinhalasub.lk/")) {
+
+            return reply("*_Please give me a movie name or sinhalasub.lk url._*")
+        }
+
+        // Split the input into URL and quality
+        const a = q.split(" & ")
+        const movieUrl = a[0]
+        const sendJid = q[1]
+
+        // Fetch movie data
+
+if(movieUrl.startsWith("https://sinhalasub.lk/")) {
+
+        const mv = await fetchJson(`${apilink}/movie/sinhalasub/movie?url=${movieUrl}`)
+
+        // Filter download links based on the quality
+        const filteredLinks = mv.result.data.dl_links.filter(
+            (link) => link.quality === 'SD 480p' && link.link.includes("pixeldrain.com")
+        )
+
+        if (filteredLinks.length === 0) {
+            return reply(`*_Can't download your movie._*`)
+        }
+
+        // Generate download URL
+        const downloadUrl = filteredLinks[0].link.replace('/u/', '/api/file/')
+
+        // Prepare caption and send the document
+        const caption = `${mv.result.data.title} ( SD 480p )\n\n> ɪɴꜰɪɴɪᴛʏ ᴍᴏᴠɪᴇ ʙᴏᴛ`
+
+
+if(!sendJid) {
+
+        await conn.sendMessage(
+            id,
+            {
+                document: { url: downloadUrl },
+                mimetype: "video/mp4",
+                fileName: mv.result.data.title + ".mp4",
+                caption: caption
+            }
+        )
+
+} else {
+
+await conn.sendMessage(
+            sendJid,
+            {
+                document: { url: downloadUrl },
+                mimetype: "video/mp4",
+                fileName: mv.result.data.title + ".mp4",
+                caption: caption
+            }
+                      )
+       }
+
+} else {
+
+const search = await fetchJson(`${apilink}/movie/sinhalasub/search?text=${movieUrl}`)
+
+const mv2 = await fetchJson(`${apilink}/movie/sinhalasub/movie?url=${search.result.data[0].link}`)
+
+        // Filter download links based on the quality
+        const filteredLinks2 = mv2.result.data.dl_links.filter(
+            (link) => link.quality === 'SD 480p' && link.link.includes("pixeldrain.com")
+        )
+
+        if (filteredLinks2.length === 0) {
+            return reply(`*_Can't download your movie._*`)
+        }
+
+        // Generate download URL
+        const downloadUrl2 = filteredLinks2[0].link.replace('/u/', '/api/file/')
+
+        // Prepare caption and send the document
+        const caption2 = `${mv2.result.data.title} ( SD 480p )\n\n> ɪɴꜰɪɴɪᴛʏ ᴍᴏᴠɪᴇ ʙᴏᴛ`
+
+
+if(!sendJid) {
+
+        await conn.sendMessage(
+            id,
+            {
+                document: { url: downloadUrl2 },
+                mimetype: "video/mp4",
+                fileName: mv2.result.data.title + ".mp4",
+                caption: caption2
+            }
+        )
+
+} else {
+
+await conn.sendMessage(
+            sendJid,
+            {
+                document: { url: downloadUrl2 },
+                mimetype: "video/mp4",
+                fileName: mv2.result.data.title + ".mp4",
+                caption: caption2
+            }
+                      )
+       }
+
+}
+
+    } catch (e) {
+        console.error(e)
+        reply(`${e}`)
+    }
+})
